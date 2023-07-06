@@ -34,7 +34,10 @@ reset.addEventListener("click", resetText);
  */
 
 //code here
-
+button1.addEventListener("click", updateTextOnButton1Click);
+button1.addEventListener("click", updateTextOnEitherButtonClick);
+button2.addEventListener("click", updateTextOnButton2Click);
+button2.addEventListener("click", updateTextOnEitherButtonClick);
 
 
 
@@ -43,7 +46,7 @@ reset.addEventListener("click", resetText);
  * When the reset button is clicked, reset the text fields to their original states.
  * dont change this method
  */
-function resetText(){
+function resetText() {
     text1.innerText = "this text will change when button1 is clicked";
     text2.innerText = "this text will change when either button1 or button2 is clicked";
     text3.innerText = "this text will change when button2 is clicked";
@@ -53,7 +56,7 @@ function resetText(){
  * update the text1 element
  * dont change this method
  */
-function updateTextOnButton1Click(){
+function updateTextOnButton1Click() {
     console.log()
     text1.innerText = "button1 clicked";
 }
@@ -62,7 +65,7 @@ function updateTextOnButton1Click(){
  * update the text2 element
  * dont change this method
  */
-function updateTextOnEitherButtonClick(){
+function updateTextOnEitherButtonClick() {
     text2.innerText = "either button1 or button2 clicked";
 }
 
@@ -70,7 +73,7 @@ function updateTextOnEitherButtonClick(){
  * update the text3 element
  * dont change this method
  */
-function updateTextOnButton2Click(){
+function updateTextOnButton2Click() {
     text3.innerText = "button2 clicked";
 }
 
