@@ -22,7 +22,7 @@ public class SeleniumTest {
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver");//linux_64
 
         // Get file
-        File file = new File("EventListener.html");
+        File file = new File("src/main/EventListener.html");
         String path = "file://" + file.getAbsolutePath();
 
         // Create a new ChromeDriver instance
